@@ -43,6 +43,12 @@ indent-width = 4
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[dependency-groups]
+dev = ["merging-galore"]
+
+[tool.uv.sources]
+merging-galore = { workspace = true }
+
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
