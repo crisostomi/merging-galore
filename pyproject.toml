@@ -40,6 +40,9 @@ exclude = [".git", ".venv", "build", "dist"]
 line-length = 88
 indent-width = 4
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
