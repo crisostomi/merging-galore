@@ -22,7 +22,7 @@ class TaskArithmeticMerger(TaskVectorBasedMerger):
         self.device = torch.device(device)
 
     def merge(
-        self, base_model: ImageEncoder, finetuned_models: Dict[str, ImageEncoder]
+        self, base_model: ImageEncoder, finetuned_models: Dict[str, dict]
     ) -> ImageEncoder:
 
         comulative_dict = {}
@@ -32,20 +32,21 @@ class TaskArithmeticMerger(TaskVectorBasedMerger):
         datasets = list(finetuned_models.keys())
         pretrained_model = copy.deepcopy(base_model)
 
+        base_state = base_model.state_dict()
         for dataset in datasets:
-            finetuned_models[dataset].to(self.device)
+            ft_state = finetuned_models[dataset]
+            ft_state = {k: v.to(self.device) for k, v in ft_state.items()}
             comulative_dict = sum_task_dict(
                 comulative_dict,
-                compute_task_dict(
-                    base_model.state_dict(), finetuned_models[dataset].state_dict()
-                ),
+                compute_task_dict(base_state, ft_state),
             )
             del finetuned_models[dataset]
             if self.device.type == "cuda":
                 torch.cuda.empty_cache()
 
         merged_encoder = apply_dict_to_model(
-            comulative_dict, pretrained_model, coefficient=self.optimal_alpha
+            comulative_dict, pretrained_model, coefficient=self.optimal_alpha,
+            device=self.device,
         )
 
         return merged_encoder
