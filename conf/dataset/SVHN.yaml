@@ -1,0 +1,9 @@
+_target_: model_merging.data.dataset.load_dataset
+name: SVHN
+ft_epochs: 4
+preprocess_fn: ???
+hf_dataset:
+  _target_: model_merging.data.dataset.load_hf_dataset_filtered
+  _args_:
+    - ufldl-stanford/svhn
+    - cropped_digits

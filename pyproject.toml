@@ -1,0 +1,45 @@
+[project]
+name = "merging-galore"
+version = "0.1.0"
+description = "Merging Galore: A challenge on weight-space model merging."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">= 3.10"
+dependencies = [
+    "torch>=2.0.1",
+    "torchvision>=0.15.2",
+    "pytorch-lightning>=2.0.0",
+    "torchmetrics>=1.0.0",
+    "open-clip-torch>=2.0.2",
+    "hydra-core>=1.3.2",
+    "omegaconf>=2.3.0",
+    "datasets>=3.0.0",
+    "huggingface-hub>=0.20.0",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+    "tqdm>=4.60.0",
+    "python-dotenv>=1.0.0",
+    "gitpython>=3.1.0",
+    "rich>=13.0.0",
+    "psutil>=5.9.0",
+    "pillow>=10.0.0",
+    "einops>=0.8.0",
+]
+
+maintainers = [
+    { name = "Donato Crisostomi", email = "donatocrisostomi@gmail.com" },
+]
+
+[tool.pytest.ini_options]
+minversion = "6.2"
+addopts = "-ra"
+testpaths = ["src/tests"]
+
+[tool.ruff]
+exclude = [".git", ".venv", "build", "dist"]
+line-length = 88
+indent-width = 4
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,34 @@
+import copy
+import logging
+from typing import Dict
+
+from model_merging.merger.merger import TaskVectorBasedMerger
+from model_merging.model.encoder import ImageEncoder
+
+pylogger = logging.getLogger(__name__)
+
+
+class WeightAverageMerger(TaskVectorBasedMerger):
+
+    def __init__(self, device="cuda"):
+        super().__init__()
+        self.device = device
+
+    def merge(
+        self, base_model: ImageEncoder, finetuned_models: Dict[str, Dict]
+    ) -> ImageEncoder:
+
+        merged_model = copy.deepcopy(base_model)
+
+        datasets = list(finetuned_models.keys())
+        num_models = len(datasets)
+
+        avg_state = {}
+        for key in finetuned_models[datasets[0]].keys():
+            avg_state[key] = (
+                sum(finetuned_models[ds][key] for ds in datasets) / num_models
+            )
+
+        merged_model.load_state_dict(avg_state, strict=True)
+
+        return merged_model

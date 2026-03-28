@@ -1,0 +1,2 @@
+# Returns the zero-shot model (no merging)
+_target_: model_merging.merger.dummy_merger.DummyMerger

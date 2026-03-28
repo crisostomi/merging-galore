@@ -1,0 +1,18 @@
+seed_index: 0
+deterministic: False
+
+trainer:
+  log_every_n_steps: 1
+  fast_dev_run: False
+  accelerator: 'gpu'
+  devices: 1
+  precision: 32
+  max_steps: -1
+  num_sanity_val_steps: 3
+  gradient_clip_val: 10.0
+  val_check_interval: 1.0
+  deterministic: ${train.deterministic}
+
+callbacks:
+  - _target_: pytorch_lightning.callbacks.progress.tqdm_progress.TQDMProgressBar
+    refresh_rate: 20

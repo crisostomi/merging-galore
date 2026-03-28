@@ -1,0 +1,7 @@
+_target_: model_merging.data.dataset.load_dataset
+name: DTD
+ft_epochs: 76
+preprocess_fn: ???
+hf_dataset:
+  _target_: model_merging.data.dataset.load_hf_dataset_filtered
+  path: tanganke/dtd

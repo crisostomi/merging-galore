@@ -1,0 +1,5 @@
+_target_: model_merging.model.encoder.ImageEncoder
+model_name: ViT-L-14
+openclip_cachedir: ${misc.openclip_cachedir}
+cache_dir: null
+keep_lang: false

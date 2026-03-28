@@ -1,0 +1,31 @@
+core:
+  project_name: merging-galore
+  storage_dir: ${oc.env:PROJECT_ROOT}/storage
+  version: 0.0.1
+
+defaults:
+  - hydra: default
+  - nn: default
+  - train: default
+  - merger: task_arithmetic
+  - benchmark: N8
+  - override hydra/launcher: basic
+  - override hydra/job_logging: none
+  - override hydra/hydra_logging: none
+  - _self_
+
+seed_index: 0
+num_tasks: ???
+eval_on_val: false
+device: 'cuda'
+
+conventions:
+  x_key: 'x'
+  y_key: 'y'
+
+misc:
+  ckpt_path: ${oc.env:MODELS_PATH}/${nn.encoder.model_name}
+  pretrained_checkpoint: ${misc.ckpt_path}/base/model.pt
+  openclip_cachedir: "${oc.env:MODELS_PATH}/openclip_cache/"
+  finetuned_accuracy_path: "${oc.env:PROJECT_ROOT}/results/finetuning/accs.json"
+  results_path: "${oc.env:PROJECT_ROOT}/results/${nn.encoder.model_name}/"

@@ -1,0 +1,11 @@
+run:
+  dir: .
+sweep:
+  dir: .
+  subdir: .
+
+output_subdir: null
+
+defaults:
+  - override job_logging: none
+  - override hydra_logging: none
