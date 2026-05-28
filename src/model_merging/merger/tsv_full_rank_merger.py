@@ -1,0 +1,78 @@
+import copy
+import logging
+
+import torch
+
+from model_merging.merger.merger import TaskVectorBasedMerger
+from model_merging.merging.structured import (
+    aggregate_decomposed_task_vectors,
+    get_svd_dict,
+)
+from model_merging.model.encoder import ImageEncoder
+from model_merging.utils.utils import (
+    apply_dict_to_model,
+    compute_task_dict,
+    print_memory,
+)
+
+pylogger = logging.getLogger(__name__)
+
+
+class FullRankTaskSingularVectorsMerger(TaskVectorBasedMerger):
+    """Task Singular Vectors with no low-rank truncation.
+
+    Standard TSV decomposes each task vector matrix with SVD and keeps only the
+    top ``1 / svd_compress_factor`` fraction of singular triplets before
+    concatenating across tasks and re-orthogonalizing. This variant pins the
+    compression factor to ``1.0`` so every per-task SVD is kept at full rank:
+    the concatenation spans the entire combined task subspace and the
+    re-orthogonalization step sees the un-truncated factors.
+    """
+
+    def __init__(
+        self,
+        svd_path,
+        non_matrix_params_aggregation="mean",
+        device="cuda",
+    ):
+        super().__init__()
+        self.svd_path = svd_path
+        # Full rank: keep all singular triplets (compression_ratio = 1.0).
+        self.svd_compress_factor = 1.0
+        self.non_matrix_params_aggregation = non_matrix_params_aggregation
+        self.device = device
+
+    @torch.no_grad()
+    def merge(self, base_model, finetuned_models) -> ImageEncoder:
+        task_dicts = {}
+        datasets = list(finetuned_models.keys())
+
+        for dataset in datasets:
+            task_dicts[dataset] = compute_task_dict(
+                base_model.state_dict(), finetuned_models[dataset]
+            )
+            del finetuned_models[dataset]
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+
+        print_memory("after computing task dicts")
+
+        svd_dict = get_svd_dict(
+            task_dicts, datasets, self.svd_path, self.svd_compress_factor
+        )
+
+        multi_task_vector = aggregate_decomposed_task_vectors(
+            ref_state_dict=copy.deepcopy(base_model.state_dict()),
+            decomposed_task_vectors=svd_dict,
+            device=self.device,
+            non_matrix_params_aggregation=self.non_matrix_params_aggregation,
+        )
+
+        merged_encoder: ImageEncoder = copy.deepcopy(base_model)
+        merged_encoder = apply_dict_to_model(
+            multi_task_vector,
+            merged_encoder,
+            device=self.device,
+        )
+
+        return merged_encoder
