@@ -24,13 +24,13 @@ env/
 # uv
 uv.lock
 
-# Project artifacts
-storage/
-models/
-data/
-wandb/
-slurm/
-checkpoints/
+# Project artifacts (anchored to repo root so src/model_merging/data/ is tracked)
+/storage/
+/models/
+/data/
+/wandb/
+/slurm/
+/checkpoints/
 
 # Results (keep finetuning accs, ignore experiment results)
 results/ViT-B-32/
