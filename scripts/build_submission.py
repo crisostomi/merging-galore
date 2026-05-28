@@ -92,6 +92,7 @@ def main() -> None:
     p.add_argument("--blurb", required=True)
     p.add_argument("--results", required=True, type=Path, help="path to the eval results JSON")
     p.add_argument("--run-log", required=True, help="repo-relative path to the run log evidence")
+    p.add_argument("--pr-url", default=None, help="URL of the associated PR against crisostomi/merging-galore (required for a valid submission)")
     p.add_argument("--author", default=None, help="submission author email (default: git config user.email)")
     p.add_argument("--date", default=dt.date.today().isoformat())
     p.add_argument("--status", default="valid", choices=["valid", "invalid", "draft"])
@@ -106,6 +107,9 @@ def main() -> None:
     author = args.author or default_author()
     if not author:
         p.error("--author not given and `git config user.email` is unset")
+
+    if args.status == "valid" and not args.pr_url:
+        p.error("a valid submission requires --pr-url (an associated PR against crisostomi/merging-galore)")
 
     setting = ENCODER_TO_SETTING[args.encoder]
     merger_config = f"conf/merger/{args.merger}.yaml"
@@ -129,7 +133,7 @@ def main() -> None:
         "merger": {"name": args.merger, "config": merger_config, "class_path": class_path},
         "metrics": metrics,
         "runtime": {"device": args.device, "eval_on_val": args.eval_on_val, "seed_index": args.seed_index},
-        "repo": repo_context(),
+        "repo": {**repo_context(), "pr_url": args.pr_url},
         "artifacts": {
             "results_json": str(args.results),
             "merger_source": args.merger_source or f"src/model_merging/merger/{args.merger}_merger.py",
@@ -145,6 +149,7 @@ def main() -> None:
     print(f"  setting={setting}  track={args.track}")
     print(f"  norm_acc_pct={metrics['normalized_acc_pct']}  acc_pct={metrics['acc_pct']}")
     print(f"  commit={submission['repo']['commit'][:10]}  dirty={submission['repo']['worktree_dirty']}")
+    print(f"  pr_url={submission['repo']['pr_url']}")
     if submission["repo"]["worktree_dirty"]:
         print("  WARNING: worktree is dirty — commit before publishing for a clean provenance trail.")
 

@@ -24,13 +24,23 @@ uv run python scripts/build_submission.py \
     --track <baseline|improvement|ablation|reproduction|failure_analysis> \
     --run-name <short-name> --blurb "<one-line description>" \
     --results results/<MODEL>/10.json \
-    --run-log <path-to-run-log>
+    --run-log <path-to-run-log> \
+    --pr-url https://github.com/crisostomi/merging-galore/pull/<N>
 ```
 
 This writes `campaign_submission_v1.json` next to the results, filling in `metrics`
 (including the `normalized_acc_pct` / `acc_pct` fields the leaderboard displays and ranks
-on), per-dataset metrics, and git provenance (`repo.commit`, etc.). Author defaults to
-your `git config user.email`.
+on), per-dataset metrics, and git provenance (`repo.commit`, `repo.pr_url`, etc.). Author
+defaults to your `git config user.email`.
+
+## Open the associated PR (required)
+
+A valid submission **must** have an associated pull request against
+`github.com/crisostomi/merging-galore` that adds your merger source
+(`src/model_merging/merger/<name>_merger.py`) and Hydra config
+(`conf/merger/<name>.yaml`). The PR is how reviewers read and reproduce your merger; put
+its URL in the submission via `--pr-url` (recorded as `repo.pr_url`). Submissions without an
+associated PR are not considered valid and are not ranked.
 
 ## 3. Publish the attempt node (Flywheel MCP)
 
