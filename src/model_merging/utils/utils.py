@@ -23,6 +23,10 @@ def print_memory(context):
     )
 
 
+def is_matrix(layer):
+    return len(layer.shape) == 2
+
+
 def accuracy(output, target, topk=(1,)):
     pred = output.topk(max(topk), 1, True, True)[1].t()
     correct = pred.eq(target.view(1, -1).expand_as(pred))

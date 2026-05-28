@@ -1,0 +1,11 @@
+datasets:
+  - ${dataset:"SUN397"}
+  - ${dataset:"Cars"}
+  - ${dataset:"RESISC45"}
+  - ${dataset:"GTSRB"}
+  - ${dataset:"DTD"}
+  - ${dataset:"Flowers102"}
+  - ${dataset:"CIFAR100"}
+  - ${dataset:"Food101"}
+  - ${dataset:"KMNIST"}
+  - ${dataset:"EuroSAT"}

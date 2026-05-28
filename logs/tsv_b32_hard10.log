@@ -1,0 +1,1289 @@
+warning: `VIRTUAL_ENV=/media/donato/Extra-storage/Code/mech-interp/adversarial_attack/.venv` does not match the project environment path `.venv` and will be ignored
+/media/donato/Extra-storage/Code/campaigns/merging-galore/scripts/evaluate_multitask_merging.py:129: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path=str(PROJECT_ROOT / "conf"), config_name="multitask.yaml")
+/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+  ret = run_job(
+[17:56:03] INFO     Seed set to 0                                   utils.py:166
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-b                
+                    ase/resolve/main/pytorch_model.bin "HTTP/1.1                
+                    302 Found"                                                  
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+           WARNING  Warning: You are sending unauthenticated        _http.py:916
+                    requests to the HF Hub. Please set a HF_TOKEN               
+                    to enable higher rate limits and faster                     
+                    downloads.                                                  
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+[17:56:04] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+           INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+[17:56:05] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-S                
+                    UN397/resolve/main/pytorch_model.bin                        
+                    "HTTP/1.1 302 Found"                                        
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+[17:56:06] INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-C                
+                    ars/resolve/main/pytorch_model.bin "HTTP/1.1                
+                    302 Found"                                                  
+[17:56:07] INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+[17:56:08] INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-R                
+                    ESISC45/resolve/main/pytorch_model.bin                      
+                    "HTTP/1.1 302 Found"                                        
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+[17:56:09] INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-G                
+                    TSRB/resolve/main/pytorch_model.bin                         
+                    "HTTP/1.1 302 Found"                                        
+[17:56:10] INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+           INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+[17:56:11] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-D                
+                    TD/resolve/main/pytorch_model.bin "HTTP/1.1                 
+                    302 Found"                                                  
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+[17:56:12] INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-F                
+                    lowers102/resolve/main/pytorch_model.bin                    
+                    "HTTP/1.1 302 Found"                                        
+[17:56:13] INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+           INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+[17:56:14] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-C                
+                    IFAR100/resolve/main/pytorch_model.bin                      
+                    "HTTP/1.1 302 Found"                                        
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+[17:56:15] INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-F                
+                    ood101/resolve/main/pytorch_model.bin                       
+                    "HTTP/1.1 302 Found"                                        
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+[17:56:16] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+           INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+[17:56:17] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-K                
+                    MNIST/resolve/main/pytorch_model.bin                        
+                    "HTTP/1.1 302 Found"                                        
+           INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+[17:56:18] INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/crisostomi/ViT-B-32-E                
+                    uroSAT/resolve/main/pytorch_model.bin                       
+                    "HTTP/1.1 302 Found"                                        
+[17:56:19] INFO     Loading ViT-B-32 pre-trained weights.          encoder.py:21
+           INFO     Parsing model identifier. Schema: None,       factory.py:326
+                    Identifier: ViT-B-32                                        
+           INFO     Loaded built-in ViT-B-32 model config.        factory.py:403
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/timm/vit_base_patch32                
+                    _clip_224.openai/resolve/main/open_clip_mode                
+                    l.safetensors "HTTP/1.1 302 Found"                          
+           INFO     Instantiating model architecture: CLIP        factory.py:500
+           INFO     Loading full pretrained weights from:         factory.py:507
+                    /media/donato/Extra-storage/hf_cache/models--               
+                    timm--vit_base_patch32_clip_224.openai/snapsh               
+                    ots/a6f597a30f7b82c51704746581f9a4e41421e878/               
+                    open_clip_model.safetensors                                 
+           INFO     Final image preprocessing configuration set:  factory.py:621
+                    {'size': (224, 224), 'mode': 'RGB', 'mean':                 
+                    (0.48145466, 0.4578275, 0.40821073), 'std':                 
+                    (0.26862954, 0.26130258, 0.27577711),                       
+                    'interpolation': 'bicubic', 'resize_mode':                  
+                    'shortest', 'fill_color': 0}                                
+           INFO     Model ViT-B-32 creation process complete.     factory.py:624
+           INFO     Removing text transformer from the model.      encoder.py:35
+           INFO     Number of tasks: 10         evaluate_multitask_merging.py:60
+           INFO     Finetuned models:           evaluate_multitask_merging.py:61
+                    [{'_target_':                                               
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'SUN397', 'ft_epochs': 14,                                  
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/sun397'}},                                        
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'Cars', 'preprocess_fn':                                    
+                    '???', 'ft_epochs': 35,                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/stanford_cars'}},                                 
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'RESISC45', 'ft_epochs':                                    
+                    15, 'preprocess_fn': '???',                                 
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/resisc45'},                                       
+                    'label_map': {0: 0, 1: 2,                                   
+                    2: 3, 3: 5, 4: 6, 5: 7, 6:                                  
+                    9, 7: 10, 8: 11, 9: 12, 10:                                 
+                    13, 11: 14, 12: 15, 13: 1,                                  
+                    14: 16, 15: 17, 16: 18, 17:                                 
+                    19, 18: 4, 19: 20, 20: 21,                                  
+                    21: 22, 22: 23, 23: 24, 24:                                 
+                    25, 25: 26, 26: 27, 27: 28,                                 
+                    28: 29, 29: 30, 30: 31, 31:                                 
+                    32, 32: 8, 33: 33, 34: 34,                                  
+                    35: 35, 36: 36, 37: 37, 38:                                 
+                    38, 39: 39, 40: 40, 41: 41,                                 
+                    42: 42, 43: 43, 44: 44},                                    
+                    'classnames_override':                                      
+                    ['airplane', 'forest',                                      
+                    'airport', 'baseball                                        
+                    diamond', 'industrial                                       
+                    area', 'basketball court',                                  
+                    'beach', 'bridge', 'river',                                 
+                    'chaparral', 'church',                                      
+                    'circular farmland',                                        
+                    'cloud', 'commercial area',                                 
+                    'dense residential',                                        
+                    'desert', 'freeway', 'golf                                  
+                    course', 'ground track                                      
+                    field', 'harbor',                                           
+                    'intersection', 'island',                                   
+                    'lake', 'meadow', 'medium                                   
+                    residential', 'mobile home                                  
+                    park', 'mountain',                                          
+                    'overpass', 'palace',                                       
+                    'parking lot', 'railway',                                   
+                    'railway station',                                          
+                    'rectangular farmland',                                     
+                    'roundabout', 'runway',                                     
+                    'sea ice', 'ship',                                          
+                    'snowberg', 'sparse                                         
+                    residential', 'stadium',                                    
+                    'storage tank', 'tennis                                     
+                    court', 'terrace', 'thermal                                 
+                    power station',                                             
+                    'wetland']}, {'_target_':                                   
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'GTSRB', 'ft_epochs': 11,                                   
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/gtsrb'}},                                         
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'DTD', 'ft_epochs': 76,                                     
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path': 'tanganke/dtd'}},                                  
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'Flowers102', 'ft_epochs':                                  
+                    147, 'preprocess_fn':                                       
+                    '???', 'hf_dataset':                                        
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'dpdl-benchmark/oxford_flow                                 
+                    ers102'}}, {'_target_':                                     
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'CIFAR100', 'ft_epochs': 6,                                 
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/cifar100'}},                                      
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'Food101', 'ft_epochs': 4,                                  
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path': 'ethz/food101'},                                   
+                    'split_map': {'train':                                      
+                    'train', 'test':                                            
+                    'validation'}},                                             
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'KMNIST', 'ft_epochs': 5,                                   
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/kmnist'}},                                        
+                    {'_target_':                                                
+                    'model_merging.data.dataset                                 
+                    .load_dataset', 'name':                                     
+                    'EuroSAT', 'ft_epochs': 12,                                 
+                    'preprocess_fn': '???',                                     
+                    'hf_dataset': {'_target_':                                  
+                    'model_merging.data.dataset                                 
+                    .load_hf_dataset_filtered',                                 
+                     'path':                                                    
+                    'tanganke/eurosat'}}]                                       
+[17:56:20] WARNING  after computing task dicts -- memory in MB:      utils.py:21
+                    6244.66015625                                               
+           INFO     Using compression ratio: 0.1000            structured.py:178
+           INFO     No precomputed SVD dictionary found.       structured.py:195
+                    Computing from scratch...                                   
+Computing and compressing SVD:   0%|          | 0/10 [00:00<?, ?it/s]Computing and compressing SVD:  10%|█         | 1/10 [00:04<00:41,  4.59s/it]Computing and compressing SVD:  20%|██        | 2/10 [00:08<00:35,  4.40s/it]Computing and compressing SVD:  30%|███       | 3/10 [00:13<00:31,  4.54s/it]Computing and compressing SVD:  40%|████      | 4/10 [00:18<00:27,  4.61s/it]Computing and compressing SVD:  50%|█████     | 5/10 [00:22<00:23,  4.64s/it]Computing and compressing SVD:  60%|██████    | 6/10 [00:27<00:19,  4.76s/it]Computing and compressing SVD:  70%|███████   | 7/10 [00:32<00:14,  4.74s/it]Computing and compressing SVD:  80%|████████  | 8/10 [00:37<00:09,  4.62s/it]Computing and compressing SVD:  90%|█████████ | 9/10 [00:42<00:04,  4.76s/it]Computing and compressing SVD: 100%|██████████| 10/10 [00:47<00:00,  4.98s/it]Computing and compressing SVD: 100%|██████████| 10/10 [00:47<00:00,  4.76s/it]
+[17:57:26] INFO     SVD dictionary saved at:                   structured.py:203
+                    /media/donato/Extra-storage/Code/campaigns                  
+                    /merging-galore/models/svd_dict_ViT-B-32_c                  
+                    ompress_10.pt                                               
+Summing SVD:   0%|          | 0/158 [00:00<?, ?it/s]Summing SVD:   1%|          | 1/158 [00:00<00:30,  5.14it/s]Summing SVD:   4%|▍         | 7/158 [00:00<00:05, 27.40it/s]Summing SVD:   8%|▊         | 12/158 [00:00<00:04, 32.75it/s]Summing SVD:  10%|█         | 16/158 [00:00<00:04, 33.15it/s]Summing SVD:  13%|█▎        | 20/158 [00:00<00:05, 24.31it/s]Summing SVD:  15%|█▌        | 24/158 [00:00<00:05, 26.55it/s]Summing SVD:  18%|█▊        | 28/158 [00:01<00:04, 28.55it/s]Summing SVD:  20%|██        | 32/158 [00:01<00:05, 22.89it/s]Summing SVD:  23%|██▎       | 36/158 [00:01<00:04, 25.23it/s]Summing SVD:  25%|██▍       | 39/158 [00:01<00:04, 25.30it/s]Summing SVD:  27%|██▋       | 42/158 [00:01<00:04, 25.00it/s]Summing SVD:  28%|██▊       | 45/158 [00:01<00:04, 24.64it/s]Summing SVD:  30%|███       | 48/158 [00:01<00:04, 24.59it/s]Summing SVD:  32%|███▏      | 51/158 [00:02<00:04, 24.80it/s]Summing SVD:  34%|███▍      | 54/158 [00:02<00:04, 24.63it/s]Summing SVD:  36%|███▌      | 57/158 [00:02<00:04, 24.43it/s]Summing SVD:  38%|███▊      | 60/158 [00:02<00:03, 24.52it/s]Summing SVD:  40%|███▉      | 63/158 [00:02<00:03, 24.79it/s]Summing SVD:  42%|████▏     | 66/158 [00:02<00:03, 24.58it/s]Summing SVD:  44%|████▎     | 69/158 [00:02<00:03, 24.37it/s]Summing SVD:  46%|████▌     | 72/158 [00:02<00:03, 24.48it/s]Summing SVD:  47%|████▋     | 75/158 [00:02<00:03, 24.74it/s]Summing SVD:  49%|████▉     | 78/158 [00:03<00:03, 24.55it/s]Summing SVD:  51%|█████▏    | 81/158 [00:03<00:03, 24.38it/s]Summing SVD:  53%|█████▎    | 84/158 [00:03<00:03, 24.47it/s]Summing SVD:  55%|█████▌    | 87/158 [00:03<00:02, 24.79it/s]Summing SVD:  57%|█████▋    | 90/158 [00:03<00:02, 24.58it/s]Summing SVD:  59%|█████▉    | 93/158 [00:03<00:02, 24.35it/s]Summing SVD:  61%|██████    | 96/158 [00:03<00:02, 24.41it/s]Summing SVD:  63%|██████▎   | 99/158 [00:03<00:02, 24.78it/s]Summing SVD:  65%|██████▍   | 102/158 [00:04<00:02, 24.61it/s]Summing SVD:  66%|██████▋   | 105/158 [00:04<00:02, 24.28it/s]Summing SVD:  68%|██████▊   | 108/158 [00:04<00:02, 24.46it/s]Summing SVD:  70%|███████   | 111/158 [00:04<00:01, 24.76it/s]Summing SVD:  72%|███████▏  | 114/158 [00:04<00:01, 24.62it/s]Summing SVD:  74%|███████▍  | 117/158 [00:04<00:01, 24.45it/s]Summing SVD:  76%|███████▌  | 120/158 [00:04<00:01, 24.55it/s]Summing SVD:  78%|███████▊  | 123/158 [00:04<00:01, 24.92it/s]Summing SVD:  80%|███████▉  | 126/158 [00:05<00:01, 24.76it/s]Summing SVD:  82%|████████▏ | 129/158 [00:05<00:01, 24.54it/s]Summing SVD:  84%|████████▎ | 132/158 [00:05<00:01, 24.64it/s]Summing SVD:  85%|████████▌ | 135/158 [00:05<00:00, 24.84it/s]Summing SVD:  87%|████████▋ | 138/158 [00:05<00:00, 24.68it/s]Summing SVD:  89%|████████▉ | 141/158 [00:05<00:00, 24.44it/s]Summing SVD:  91%|█████████ | 144/158 [00:05<00:00, 24.52it/s]Summing SVD:  93%|█████████▎| 147/158 [00:05<00:00, 24.88it/s]Summing SVD:  95%|█████████▍| 150/158 [00:06<00:00, 24.74it/s]Summing SVD:  97%|█████████▋| 153/158 [00:06<00:00, 24.54it/s]Summing SVD: 100%|██████████| 158/158 [00:06<00:00, 25.38it/s]
+[17:57:33] WARNING  before eval -- memory in MB: 12241.05859375      utils.py:21
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/sun397' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+           ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/sun397' isn't based on a loading                  
+                    script and remove `trust_remote_code`.                      
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sun                
+                    397/resolve/main/README.md "HTTP/1.1 307                    
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/sun397/9c4afd6174afa3974f209a                
+                    0ef099dbbe244dfd27/README.md "HTTP/1.1 200                  
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sun                
+                    397/resolve/9c4afd6174afa3974f209a0ef099dbbe                
+                    244dfd27/sun397.py "HTTP/1.1 404 Not Found"                 
+[17:57:34] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/sun397/tanga                
+                    nke/sun397.py "HTTP/1.1 404 Not Found"                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /sun397/revision/9c4afd6174afa3974f209a0ef09                
+                    9dbbe244dfd27 "HTTP/1.1 200 OK"                             
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sun                
+                    397/resolve/9c4afd6174afa3974f209a0ef099dbbe                
+                    244dfd27/.huggingface.yaml "HTTP/1.1 404 Not                
+                    Found"                                                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/sun397 "HTTP/1.1 200 OK"                   
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /sun397/tree/9c4afd6174afa3974f209a0ef099dbb                
+                    e244dfd27/data?recursive=true&expand=false                  
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /sun397/tree/9c4afd6174afa3974f209a0ef099dbb                
+                    e244dfd27?recursive=false&expand=false                      
+                    "HTTP/1.1 200 OK"                                           
+[17:57:35] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sun                
+                    397/resolve/9c4afd6174afa3974f209a0ef099dbbe                
+                    244dfd27/dataset_infos.json "HTTP/1.1 404                   
+                    Not Found"                                                  
+           INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_SUN397.pt                  
+/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/pytorch_lightning/utilities/parsing.py:213: Attribute 'encoder' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['encoder'])`.
+/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/pytorch_lightning/utilities/parsing.py:213: Attribute 'classifier' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['classifier'])`.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the SUN397   evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/311 [00:00<?, ?it/s]Testing DataLoader 0:   6%|▋         | 20/311 [00:04<01:02,  4.62it/s]Testing DataLoader 0:  13%|█▎        | 40/311 [00:08<00:59,  4.53it/s]Testing DataLoader 0:  19%|█▉        | 60/311 [00:13<00:57,  4.38it/s]Testing DataLoader 0:  26%|██▌       | 80/311 [00:19<00:56,  4.12it/s]Testing DataLoader 0:  32%|███▏      | 100/311 [00:24<00:51,  4.09it/s]Testing DataLoader 0:  39%|███▊      | 120/311 [00:29<00:47,  4.01it/s]Testing DataLoader 0:  45%|████▌     | 140/311 [00:34<00:41,  4.10it/s]Testing DataLoader 0:  51%|█████▏    | 160/311 [00:39<00:36,  4.10it/s]Testing DataLoader 0:  58%|█████▊    | 180/311 [00:43<00:31,  4.15it/s]Testing DataLoader 0:  64%|██████▍   | 200/311 [00:47<00:26,  4.18it/s]Testing DataLoader 0:  71%|███████   | 220/311 [00:52<00:21,  4.21it/s]Testing DataLoader 0:  77%|███████▋  | 240/311 [00:56<00:16,  4.24it/s]Testing DataLoader 0:  84%|████████▎ | 260/311 [01:01<00:12,  4.24it/s]Testing DataLoader 0:  90%|█████████ | 280/311 [01:05<00:07,  4.24it/s]/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Testing DataLoader 0:  96%|█████████▋| 300/311 [01:10<00:02,  4.27it/s]Testing DataLoader 0: 100%|██████████| 311/311 [01:12<00:00,  4.30it/s]Testing DataLoader 0: 100%|██████████| 311/311 [01:12<00:00,  4.29it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric         ┃        DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/SUN397       │     0.6264483332633972     │
+│      loss/test/SUN397      │      1.43869149684906      │
+│ normalized_acc/test/SUN397 │     0.836641252040863      │
+└────────────────────────────┴────────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/stanford_cars' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:58:50] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/stanford_cars' isn't based on a                   
+                    loading script and remove `trust_remote_code`.              
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sta                
+                    nford_cars/resolve/main/README.md "HTTP/1.1                 
+                    307 Temporary Redirect"                                     
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/stanford_cars/9abf6cf7d6dfa7b                
+                    95152a0d6e791ea9435b47a40/README.md                         
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sta                
+                    nford_cars/resolve/9abf6cf7d6dfa7b95152a0d6e                
+                    791ea9435b47a40/stanford_cars.py "HTTP/1.1                  
+                    404 Not Found"                                              
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/stanford_car                
+                    s/tanganke/stanford_cars.py "HTTP/1.1 404                   
+                    Not Found"                                                  
+[17:58:51] INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /stanford_cars/revision/9abf6cf7d6dfa7b95152                
+                    a0d6e791ea9435b47a40 "HTTP/1.1 200 OK"                      
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sta                
+                    nford_cars/resolve/9abf6cf7d6dfa7b95152a0d6e                
+                    791ea9435b47a40/.huggingface.yaml "HTTP/1.1                 
+                    404 Not Found"                                              
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/stanford_cars "HTTP/1.1 200                
+                    OK"                                                         
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /stanford_cars/tree/9abf6cf7d6dfa7b95152a0d6                
+                    e791ea9435b47a40/data?recursive=true&expand=                
+                    false "HTTP/1.1 200 OK"                                     
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /stanford_cars/tree/9abf6cf7d6dfa7b95152a0d6                
+                    e791ea9435b47a40?recursive=false&expand=fals                
+                    e "HTTP/1.1 200 OK"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/sta                
+                    nford_cars/resolve/9abf6cf7d6dfa7b95152a0d6e                
+                    791ea9435b47a40/dataset_infos.json "HTTP/1.1                
+                    404 Not Found"                                              
+[17:58:52] INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_Cars.pt                    
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the Cars     evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/126 [00:00<?, ?it/s]Testing DataLoader 0:  16%|█▌        | 20/126 [00:01<00:08, 12.28it/s]Testing DataLoader 0:  32%|███▏      | 40/126 [00:03<00:08, 10.30it/s]Testing DataLoader 0:  48%|████▊     | 60/126 [00:06<00:07,  9.27it/s]Testing DataLoader 0:  63%|██████▎   | 80/126 [00:08<00:04,  9.61it/s]Testing DataLoader 0:  79%|███████▉  | 100/126 [00:10<00:02,  9.55it/s]Testing DataLoader 0:  95%|█████████▌| 120/126 [00:12<00:00,  9.98it/s]Testing DataLoader 0: 100%|██████████| 126/126 [00:12<00:00,  9.86it/s]Testing DataLoader 0: 100%|██████████| 126/126 [00:12<00:00,  9.82it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│       acc/test/Cars       │    0.6745429635047913     │
+│      loss/test/Cars       │    1.0598140954971313     │
+│ normalized_acc/test/Cars  │    0.8451231122016907     │
+└───────────────────────────┴───────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/resisc45' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:59:06] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/resisc45' isn't based on a loading                
+                    script and remove `trust_remote_code`.                      
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/res                
+                    isc45/resolve/main/README.md "HTTP/1.1 307                  
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/resisc45/5c484982a196dcb501b8                
+                    e79c6cf4680dc6f2ccdf/README.md "HTTP/1.1 200                
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/res                
+                    isc45/resolve/5c484982a196dcb501b8e79c6cf468                
+                    0dc6f2ccdf/resisc45.py "HTTP/1.1 404 Not                    
+                    Found"                                                      
+[17:59:07] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/resisc45/tan                
+                    ganke/resisc45.py "HTTP/1.1 404 Not Found"                  
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /resisc45/revision/5c484982a196dcb501b8e79c6                
+                    cf4680dc6f2ccdf "HTTP/1.1 200 OK"                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/res                
+                    isc45/resolve/5c484982a196dcb501b8e79c6cf468                
+                    0dc6f2ccdf/.huggingface.yaml "HTTP/1.1 404                  
+                    Not Found"                                                  
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/resisc45 "HTTP/1.1 200 OK"                 
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /resisc45/tree/5c484982a196dcb501b8e79c6cf46                
+                    80dc6f2ccdf/data?recursive=true&expand=false                
+                     "HTTP/1.1 200 OK"                                          
+[17:59:08] INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /resisc45/tree/5c484982a196dcb501b8e79c6cf46                
+                    80dc6f2ccdf?recursive=false&expand=false                    
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/res                
+                    isc45/resolve/5c484982a196dcb501b8e79c6cf468                
+                    0dc6f2ccdf/dataset_infos.json "HTTP/1.1 404                 
+                    Not Found"                                                  
+           INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_RESISC45.pt                
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the RESISC45 evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/99 [00:00<?, ?it/s]Testing DataLoader 0:  20%|██        | 20/99 [00:00<00:01, 44.04it/s]Testing DataLoader 0:  40%|████      | 40/99 [00:01<00:01, 36.58it/s]Testing DataLoader 0:  61%|██████    | 60/99 [00:01<00:01, 34.60it/s]Testing DataLoader 0:  81%|████████  | 80/99 [00:02<00:00, 33.90it/s]Testing DataLoader 0: 100%|██████████| 99/99 [00:02<00:00, 33.62it/s]Testing DataLoader 0: 100%|██████████| 99/99 [00:03<00:00, 31.86it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃         Test metric          ┃         DataLoader 0         ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/RESISC45       │      0.7941269874572754      │
+│      loss/test/RESISC45      │      0.7475529313087463      │
+│ normalized_acc/test/RESISC45 │      0.8332778215408325      │
+└──────────────────────────────┴──────────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/gtsrb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:59:13] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/gtsrb' isn't based on a loading                   
+                    script and remove `trust_remote_code`.                      
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/gts                
+                    rb/resolve/main/README.md "HTTP/1.1 307                     
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/gtsrb/ea889fff70dda7b09e94a4b                
+                    207dded438deca549/README.md "HTTP/1.1 200                   
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/gts                
+                    rb/resolve/ea889fff70dda7b09e94a4b207dded438                
+                    deca549/gtsrb.py "HTTP/1.1 404 Not Found"                   
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/gtsrb/tangan                
+                    ke/gtsrb.py "HTTP/1.1 404 Not Found"                        
+[17:59:14] INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /gtsrb/revision/ea889fff70dda7b09e94a4b207dd                
+                    ed438deca549 "HTTP/1.1 200 OK"                              
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/gts                
+                    rb/resolve/ea889fff70dda7b09e94a4b207dded438                
+                    deca549/.huggingface.yaml "HTTP/1.1 404 Not                 
+                    Found"                                                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/gtsrb "HTTP/1.1 200 OK"                    
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /gtsrb/tree/ea889fff70dda7b09e94a4b207dded43                
+                    8deca549/data?recursive=true&expand=false                   
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /gtsrb/tree/ea889fff70dda7b09e94a4b207dded43                
+                    8deca549?recursive=false&expand=false                       
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/gts                
+                    rb/resolve/ea889fff70dda7b09e94a4b207dded438                
+                    deca549/dataset_infos.json "HTTP/1.1 404 Not                
+                    Found"                                                      
+[17:59:15] INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_GTSRB.pt                   
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the GTSRB    evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/198 [00:00<?, ?it/s]Testing DataLoader 0:  10%|█         | 20/198 [00:00<00:04, 42.24it/s]Testing DataLoader 0:  20%|██        | 40/198 [00:01<00:04, 36.28it/s]Testing DataLoader 0:  30%|███       | 60/198 [00:01<00:03, 34.80it/s]Testing DataLoader 0:  40%|████      | 80/198 [00:02<00:03, 34.10it/s]Testing DataLoader 0:  51%|█████     | 100/198 [00:02<00:02, 33.70it/s]Testing DataLoader 0:  61%|██████    | 120/198 [00:03<00:02, 33.43it/s]Testing DataLoader 0:  71%|███████   | 140/198 [00:04<00:01, 33.26it/s]Testing DataLoader 0:  81%|████████  | 160/198 [00:04<00:01, 33.13it/s]Testing DataLoader 0:  91%|█████████ | 180/198 [00:05<00:00, 33.00it/s]Testing DataLoader 0: 100%|██████████| 198/198 [00:06<00:00, 32.98it/s]Testing DataLoader 0: 100%|██████████| 198/198 [00:06<00:00, 32.13it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/GTSRB       │    0.8841646909713745     │
+│      loss/test/GTSRB      │    0.4233763813972473     │
+│ normalized_acc/test/GTSRB │    0.8937174677848816     │
+└───────────────────────────┴───────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/dtd' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:59:23] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/dtd' isn't based on a loading script              
+                    and remove `trust_remote_code`.                             
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/dtd                
+                    /resolve/main/README.md "HTTP/1.1 307                       
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/dtd/d2afa97d9f335b1a6b3b09c63                
+                    7aef667f98f966e/README.md "HTTP/1.1 200 OK"                 
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/dtd                
+                    /resolve/d2afa97d9f335b1a6b3b09c637aef667f98                
+                    f966e/dtd.py "HTTP/1.1 404 Not Found"                       
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/dtd/tanganke                
+                    /dtd.py "HTTP/1.1 404 Not Found"                            
+[17:59:24] INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /dtd/revision/d2afa97d9f335b1a6b3b09c637aef6                
+                    67f98f966e "HTTP/1.1 200 OK"                                
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/dtd                
+                    /resolve/d2afa97d9f335b1a6b3b09c637aef667f98                
+                    f966e/.huggingface.yaml "HTTP/1.1 404 Not                   
+                    Found"                                                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/dtd "HTTP/1.1 200 OK"                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /dtd/tree/d2afa97d9f335b1a6b3b09c637aef667f9                
+                    8f966e/data?recursive=true&expand=false                     
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /dtd/tree/d2afa97d9f335b1a6b3b09c637aef667f9                
+                    8f966e?recursive=false&expand=false                         
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/dtd                
+                    /resolve/d2afa97d9f335b1a6b3b09c637aef667f98                
+                    f966e/dataset_infos.json "HTTP/1.1 404 Not                  
+                    Found"                                                      
+           INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_DTD.pt                     
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+[17:59:25] INFO     Evaluating on the DTD test evaluate_multitask_merging.py:109
+                    set!                                                        
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/30 [00:00<?, ?it/s]Testing DataLoader 0:  67%|██████▋   | 20/30 [00:00<00:00, 21.91it/s]Testing DataLoader 0: 100%|██████████| 30/30 [00:01<00:00, 19.26it/s]Testing DataLoader 0: 100%|██████████| 30/30 [00:01<00:00, 18.80it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│       acc/test/DTD        │    0.5271276831626892     │
+│       loss/test/DTD       │     1.801209807395935     │
+│  normalized_acc/test/DTD  │    0.6741496920585632     │
+└───────────────────────────┴───────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'dpdl-benchmark/oxford_flowers102' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:59:28] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'dpdl-benchmark/oxford_flowers102' isn't based              
+                    on a loading script and remove                              
+                    `trust_remote_code`.                                        
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/dpdl-benchma                
+                    rk/oxford_flowers102/resolve/main/README.md                 
+                    "HTTP/1.1 307 Temporary Redirect"                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/dpdl-benchmark/oxford_flowers102/544b5                
+                    5c9af69a05742ead7571cd7ae23cfcd758b/README.m                
+                    d "HTTP/1.1 200 OK"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/dpdl-benchma                
+                    rk/oxford_flowers102/resolve/544b55c9af69a05                
+                    742ead7571cd7ae23cfcd758b/oxford_flowers102.                
+                    py "HTTP/1.1 404 Not Found"                                 
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/dpdl-benchmark/oxford                
+                    _flowers102/dpdl-benchmark/oxford_flowers102                
+                    .py "HTTP/1.1 404 Not Found"                                
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/dpdl-ben                
+                    chmark/oxford_flowers102/revision/544b55c9af                
+                    69a05742ead7571cd7ae23cfcd758b "HTTP/1.1 200                
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/dpdl-benchma                
+                    rk/oxford_flowers102/resolve/544b55c9af69a05                
+                    742ead7571cd7ae23cfcd758b/.huggingface.yaml                 
+                    "HTTP/1.1 404 Not Found"                                    
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=dpdl-benchmark/oxford_flowers102                    
+                    "HTTP/1.1 200 OK"                                           
+[17:59:29] INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/dpdl-ben                
+                    chmark/oxford_flowers102/tree/544b55c9af69a0                
+                    5742ead7571cd7ae23cfcd758b/data?recursive=tr                
+                    ue&expand=false "HTTP/1.1 200 OK"                           
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/dpdl-ben                
+                    chmark/oxford_flowers102/tree/544b55c9af69a0                
+                    5742ead7571cd7ae23cfcd758b?recursive=false&e                
+                    xpand=false "HTTP/1.1 200 OK"                               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/dpdl-benchma                
+                    rk/oxford_flowers102/resolve/544b55c9af69a05                
+                    742ead7571cd7ae23cfcd758b/dataset_infos.json                
+                     "HTTP/1.1 404 Not Found"                                   
+           INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_Flowers102.pt              
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the          evaluate_multitask_merging.py:109
+                    Flowers102 test set!                                        
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/97 [00:00<?, ?it/s]Testing DataLoader 0:  21%|██        | 20/97 [00:02<00:10,  7.20it/s]Testing DataLoader 0:  41%|████      | 40/97 [00:06<00:08,  6.43it/s]Testing DataLoader 0:  62%|██████▏   | 60/97 [00:09<00:05,  6.23it/s]Testing DataLoader 0:  82%|████████▏ | 80/97 [00:13<00:02,  6.11it/s]Testing DataLoader 0: 100%|██████████| 97/97 [00:15<00:00,  6.09it/s]Testing DataLoader 0: 100%|██████████| 97/97 [00:15<00:00,  6.06it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Test metric           ┃          DataLoader 0          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/Flowers102       │       0.5714750289916992       │
+│      loss/test/Flowers102      │       1.8609702587127686       │
+│ normalized_acc/test/Flowers102 │       0.635903000831604        │
+└────────────────────────────────┴────────────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/cifar100' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:59:47] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/cifar100' isn't based on a loading                
+                    script and remove `trust_remote_code`.                      
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/cif                
+                    ar100/resolve/main/README.md "HTTP/1.1 307                  
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/cifar100/7de7416777eb0bca0194                
+                    ab35ac1c1b297f1d6b26/README.md "HTTP/1.1 200                
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/cif                
+                    ar100/resolve/7de7416777eb0bca0194ab35ac1c1b                
+                    297f1d6b26/cifar100.py "HTTP/1.1 404 Not                    
+                    Found"                                                      
+[17:59:48] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/cifar100/tan                
+                    ganke/cifar100.py "HTTP/1.1 404 Not Found"                  
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /cifar100/revision/7de7416777eb0bca0194ab35a                
+                    c1c1b297f1d6b26 "HTTP/1.1 200 OK"                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/cif                
+                    ar100/resolve/7de7416777eb0bca0194ab35ac1c1b                
+                    297f1d6b26/.huggingface.yaml "HTTP/1.1 404                  
+                    Not Found"                                                  
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/cifar100 "HTTP/1.1 200 OK"                 
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /cifar100/tree/7de7416777eb0bca0194ab35ac1c1                
+                    b297f1d6b26/data?recursive=true&expand=false                
+                     "HTTP/1.1 200 OK"                                          
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /cifar100/tree/7de7416777eb0bca0194ab35ac1c1                
+                    b297f1d6b26?recursive=false&expand=false                    
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/cif                
+                    ar100/resolve/7de7416777eb0bca0194ab35ac1c1b                
+                    297f1d6b26/dataset_infos.json "HTTP/1.1 404                 
+                    Not Found"                                                  
+[17:59:49] INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_CIFAR100.pt                
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the CIFAR100 evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/157 [00:00<?, ?it/s]Testing DataLoader 0:  13%|█▎        | 20/157 [00:00<00:03, 42.74it/s]Testing DataLoader 0:  25%|██▌       | 40/157 [00:01<00:03, 36.78it/s]Testing DataLoader 0:  38%|███▊      | 60/157 [00:01<00:02, 35.11it/s]Testing DataLoader 0:  51%|█████     | 80/157 [00:02<00:02, 34.36it/s]Testing DataLoader 0:  64%|██████▎   | 100/157 [00:02<00:01, 33.92it/s]Testing DataLoader 0:  76%|███████▋  | 120/157 [00:03<00:01, 33.62it/s]Testing DataLoader 0:  89%|████████▉ | 140/157 [00:04<00:00, 33.42it/s]Testing DataLoader 0: 100%|██████████| 157/157 [00:04<00:00, 33.36it/s]Testing DataLoader 0: 100%|██████████| 157/157 [00:04<00:00, 32.27it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃         Test metric          ┃         DataLoader 0         ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/CIFAR100       │      0.6942999958992004      │
+│      loss/test/CIFAR100      │      1.2868618965148926      │
+│ normalized_acc/test/CIFAR100 │      0.7984130382537842      │
+└──────────────────────────────┴──────────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'ethz/food101' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[17:59:55] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'ethz/food101' isn't based on a loading script              
+                    and remove `trust_remote_code`.                             
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/ethz/food101                
+                    /resolve/main/README.md "HTTP/1.1 307                       
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/ethz/food101/83488de741c1bd1ce27aa6a2b                
+                    33e19c7bdf92ca9/README.md "HTTP/1.1 200 OK"                 
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/ethz/food101                
+                    /resolve/83488de741c1bd1ce27aa6a2b33e19c7bdf                
+                    92ca9/food101.py "HTTP/1.1 404 Not Found"                   
+[17:59:56] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/ethz/food101/ethz/foo                
+                    d101.py "HTTP/1.1 404 Not Found"                            
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/ethz/foo                
+                    d101/revision/83488de741c1bd1ce27aa6a2b33e19                
+                    c7bdf92ca9 "HTTP/1.1 200 OK"                                
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/ethz/food101                
+                    /resolve/83488de741c1bd1ce27aa6a2b33e19c7bdf                
+                    92ca9/.huggingface.yaml "HTTP/1.1 404 Not                   
+                    Found"                                                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=ethz/food101 "HTTP/1.1 200 OK"                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/ethz/foo                
+                    d101/tree/83488de741c1bd1ce27aa6a2b33e19c7bd                
+                    f92ca9/data?recursive=true&expand=false                     
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/ethz/foo                
+                    d101/tree/83488de741c1bd1ce27aa6a2b33e19c7bd                
+                    f92ca9?recursive=false&expand=false                         
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/ethz/food101                
+                    /resolve/83488de741c1bd1ce27aa6a2b33e19c7bdf                
+                    92ca9/dataset_infos.json "HTTP/1.1 404 Not                  
+                    Found"                                                      
+[17:59:57] INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_Food101.pt                 
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the Food101  evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/395 [00:00<?, ?it/s]Testing DataLoader 0:   5%|▌         | 20/395 [00:00<00:16, 22.32it/s]Testing DataLoader 0:  10%|█         | 40/395 [00:02<00:17, 19.82it/s]/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Testing DataLoader 0:  15%|█▌        | 60/395 [00:03<00:17, 19.32it/s]Testing DataLoader 0:  20%|██        | 80/395 [00:04<00:16, 19.18it/s]Testing DataLoader 0:  25%|██▌       | 100/395 [00:05<00:15, 19.07it/s]Testing DataLoader 0:  30%|███       | 120/395 [00:06<00:14, 18.88it/s]/media/donato/Extra-storage/Code/campaigns/merging-galore/.venv/lib/python3.13/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Testing DataLoader 0:  35%|███▌      | 140/395 [00:07<00:13, 18.84it/s]Testing DataLoader 0:  41%|████      | 160/395 [00:08<00:12, 18.76it/s]Testing DataLoader 0:  46%|████▌     | 180/395 [00:09<00:11, 18.70it/s]Testing DataLoader 0:  51%|█████     | 200/395 [00:10<00:10, 18.65it/s]Testing DataLoader 0:  56%|█████▌    | 220/395 [00:11<00:09, 18.64it/s]Testing DataLoader 0:  61%|██████    | 240/395 [00:12<00:08, 18.59it/s]Testing DataLoader 0:  66%|██████▌   | 260/395 [00:13<00:07, 18.58it/s]Testing DataLoader 0:  71%|███████   | 280/395 [00:15<00:06, 18.57it/s]Testing DataLoader 0:  76%|███████▌  | 300/395 [00:16<00:05, 18.59it/s]Testing DataLoader 0:  81%|████████  | 320/395 [00:17<00:04, 18.60it/s]Testing DataLoader 0:  86%|████████▌ | 340/395 [00:18<00:02, 18.57it/s]Testing DataLoader 0:  91%|█████████ | 360/395 [00:19<00:01, 18.54it/s]Testing DataLoader 0:  96%|█████████▌| 380/395 [00:20<00:00, 18.51it/s]Testing DataLoader 0: 100%|██████████| 395/395 [00:21<00:00, 18.13it/s]Testing DataLoader 0: 100%|██████████| 395/395 [00:21<00:00, 18.07it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃         Test metric         ┃        DataLoader 0         ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/Food101       │     0.7751287221908569      │
+│      loss/test/Food101      │     0.8458280563354492      │
+│ normalized_acc/test/Food101 │     0.9009390473365784      │
+└─────────────────────────────┴─────────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/kmnist' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[18:00:20] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/kmnist' isn't based on a loading                  
+                    script and remove `trust_remote_code`.                      
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+[18:00:21] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/kmn                
+                    ist/resolve/main/README.md "HTTP/1.1 307                    
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/kmnist/6b345bef535b98131f1d94                
+                    5d552906452d19b2f9/README.md "HTTP/1.1 200                  
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/kmn                
+                    ist/resolve/6b345bef535b98131f1d945d55290645                
+                    2d19b2f9/kmnist.py "HTTP/1.1 404 Not Found"                 
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/kmnist/tanga                
+                    nke/kmnist.py "HTTP/1.1 404 Not Found"                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /kmnist/revision/6b345bef535b98131f1d945d552                
+                    906452d19b2f9 "HTTP/1.1 200 OK"                             
+[18:00:22] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/kmn                
+                    ist/resolve/6b345bef535b98131f1d945d55290645                
+                    2d19b2f9/.huggingface.yaml "HTTP/1.1 404 Not                
+                    Found"                                                      
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/kmnist "HTTP/1.1 200 OK"                   
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /kmnist/tree/6b345bef535b98131f1d945d5529064                
+                    52d19b2f9/kmnist?recursive=true&expand=false                
+                     "HTTP/1.1 200 OK"                                          
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /kmnist/tree/6b345bef535b98131f1d945d5529064                
+                    52d19b2f9?recursive=false&expand=false                      
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/kmn                
+                    ist/resolve/6b345bef535b98131f1d945d55290645                
+                    2d19b2f9/dataset_infos.json "HTTP/1.1 404                   
+                    Not Found"                                                  
+           INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_KMNIST.pt                  
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the KMNIST   evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/157 [00:00<?, ?it/s]Testing DataLoader 0:  13%|█▎        | 20/157 [00:00<00:03, 43.01it/s]Testing DataLoader 0:  25%|██▌       | 40/157 [00:01<00:03, 36.65it/s]Testing DataLoader 0:  38%|███▊      | 60/157 [00:01<00:02, 34.97it/s]Testing DataLoader 0:  51%|█████     | 80/157 [00:02<00:02, 34.17it/s]Testing DataLoader 0:  64%|██████▎   | 100/157 [00:02<00:01, 33.76it/s]Testing DataLoader 0:  76%|███████▋  | 120/157 [00:03<00:01, 33.48it/s]Testing DataLoader 0:  89%|████████▉ | 140/157 [00:04<00:00, 33.27it/s]Testing DataLoader 0: 100%|██████████| 157/157 [00:04<00:00, 33.24it/s]Testing DataLoader 0: 100%|██████████| 157/157 [00:04<00:00, 32.17it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric         ┃        DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/KMNIST       │     0.6783999800682068     │
+│      loss/test/KMNIST      │     1.0592578649520874     │
+│ normalized_acc/test/KMNIST │     0.6913278102874756     │
+└────────────────────────────┴────────────────────────────┘
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'tanganke/eurosat' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+[18:00:28] ERROR    `trust_remote_code` is not supported anymore.   load.py:1663
+                    Please check that the Hugging Face dataset                  
+                    'tanganke/eurosat' isn't based on a loading                 
+                    script and remove `trust_remote_code`.                      
+                    If the dataset is based on a loading script,                
+                    please ask the dataset author to remove it and              
+                    convert it to a standard format like Parquet.               
+[18:00:29] INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/eur                
+                    osat/resolve/main/README.md "HTTP/1.1 307                   
+                    Temporary Redirect"                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/api/resolve-cache/dat                
+                    asets/tanganke/eurosat/43750fc422c7fbd4289e2                
+                    df3f7473617a5937acc/README.md "HTTP/1.1 200                 
+                    OK"                                                         
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/eur                
+                    osat/resolve/43750fc422c7fbd4289e2df3f747361                
+                    7a5937acc/eurosat.py "HTTP/1.1 404 Not                      
+                    Found"                                                      
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://s3.amazonaws.com/datasets.huggingfac                
+                    e.co/datasets/datasets/tanganke/eurosat/tang                
+                    anke/eurosat.py "HTTP/1.1 404 Not Found"                    
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /eurosat/revision/43750fc422c7fbd4289e2df3f7                
+                    473617a5937acc "HTTP/1.1 200 OK"                            
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/eur                
+                    osat/resolve/43750fc422c7fbd4289e2df3f747361                
+                    7a5937acc/.huggingface.yaml "HTTP/1.1 404                   
+                    Not Found"                                                  
+[18:00:30] INFO     HTTP Request: GET                            _client.py:1025
+                    https://datasets-server.huggingface.co/info?                
+                    dataset=tanganke/eurosat "HTTP/1.1 200 OK"                  
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /eurosat/tree/43750fc422c7fbd4289e2df3f74736                
+                    17a5937acc/data?recursive=true&expand=false                 
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: GET                            _client.py:1025
+                    https://huggingface.co/api/datasets/tanganke                
+                    /eurosat/tree/43750fc422c7fbd4289e2df3f74736                
+                    17a5937acc?recursive=false&expand=false                     
+                    "HTTP/1.1 200 OK"                                           
+           INFO     HTTP Request: HEAD                           _client.py:1025
+                    https://huggingface.co/datasets/tanganke/eur                
+                    osat/resolve/43750fc422c7fbd4289e2df3f747361                
+                    7a5937acc/dataset_infos.json "HTTP/1.1 404                  
+                    Not Found"                                                  
+           INFO     Loading classification head from               encoder.py:98
+                    /media/donato/Extra-storage/Code/campaigns/mer              
+                    ging-galore/models/ViT-B-32/head_EuroSAT.pt                 
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+           INFO     Evaluating on the EuroSAT  evaluate_multitask_merging.py:109
+                    test set!                                                   
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |          | 0/? [00:00<?, ?it/s]Testing: |          | 0/? [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/43 [00:00<?, ?it/s]Testing DataLoader 0:  47%|████▋     | 20/43 [00:00<00:00, 42.57it/s]Testing DataLoader 0:  93%|█████████▎| 40/43 [00:01<00:00, 36.81it/s]Testing DataLoader 0: 100%|██████████| 43/43 [00:01<00:00, 36.58it/s]Testing DataLoader 0: 100%|██████████| 43/43 [00:01<00:00, 32.29it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃         Test metric         ┃        DataLoader 0         ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      acc/test/EuroSAT       │     0.9051851630210876      │
+│      loss/test/EuroSAT      │     0.31219953298568726     │
+│ normalized_acc/test/EuroSAT │     0.9119402766227722      │
+└─────────────────────────────┴─────────────────────────────┘
+[18:00:33] INFO     {'SUN397':                 evaluate_multitask_merging.py:117
+                    [{'acc/test/SUN397':                                        
+                    0.6264483332633972,                                         
+                    'loss/test/SUN397':                                         
+                    1.43869149684906,                                           
+                    'normalized_acc/test/SUN39                                  
+                    7': 0.836641252040863}],                                    
+                    'Cars': [{'acc/test/Cars':                                  
+                    0.6745429635047913,                                         
+                    'loss/test/Cars':                                           
+                    1.0598140954971313,                                         
+                    'normalized_acc/test/Cars'                                  
+                    : 0.8451231122016907}],                                     
+                    'RESISC45':                                                 
+                    [{'acc/test/RESISC45':                                      
+                    0.7941269874572754,                                         
+                    'loss/test/RESISC45':                                       
+                    0.7475529313087463,                                         
+                    'normalized_acc/test/RESIS                                  
+                    C45':                                                       
+                    0.8332778215408325}],                                       
+                    'GTSRB':                                                    
+                    [{'acc/test/GTSRB':                                         
+                    0.8841646909713745,                                         
+                    'loss/test/GTSRB':                                          
+                    0.4233763813972473,                                         
+                    'normalized_acc/test/GTSRB                                  
+                    ': 0.8937174677848816}],                                    
+                    'DTD': [{'acc/test/DTD':                                    
+                    0.5271276831626892,                                         
+                    'loss/test/DTD':                                            
+                    1.801209807395935,                                          
+                    'normalized_acc/test/DTD':                                  
+                    0.6741496920585632}],                                       
+                    'Flowers102':                                               
+                    [{'acc/test/Flowers102':                                    
+                    0.5714750289916992,                                         
+                    'loss/test/Flowers102':                                     
+                    1.8609702587127686,                                         
+                    'normalized_acc/test/Flowe                                  
+                    rs102':                                                     
+                    0.635903000831604}],                                        
+                    'CIFAR100':                                                 
+                    [{'acc/test/CIFAR100':                                      
+                    0.6942999958992004,                                         
+                    'loss/test/CIFAR100':                                       
+                    1.2868618965148926,                                         
+                    'normalized_acc/test/CIFAR                                  
+                    100':                                                       
+                    0.7984130382537842}],                                       
+                    'Food101':                                                  
+                    [{'acc/test/Food101':                                       
+                    0.7751287221908569,                                         
+                    'loss/test/Food101':                                        
+                    0.8458280563354492,                                         
+                    'normalized_acc/test/Food1                                  
+                    01': 0.9009390473365784}],                                  
+                    'KMNIST':                                                   
+                    [{'acc/test/KMNIST':                                        
+                    0.6783999800682068,                                         
+                    'loss/test/KMNIST':                                         
+                    1.0592578649520874,                                         
+                    'normalized_acc/test/KMNIS                                  
+                    T': 0.6913278102874756}],                                   
+                    'EuroSAT':                                                  
+                    [{'acc/test/EuroSAT':                                       
+                    0.9051851630210876,                                         
+                    'loss/test/EuroSAT':                                        
+                    0.31219953298568726,                                        
+                    'normalized_acc/test/EuroS                                  
+                    AT': 0.9119402766227722}],                                  
+                    'avg': [{'acc/test/avg':                                    
+                    0.7130899548530578,                                         
+                    'normalized_acc/test/avg':                                  
+                    0.8021432518959045}]}                                       
+           INFO     Results saved to           evaluate_multitask_merging.py:124
+                    /media/donato/Extra-storag                                  
+                    e/Code/campaigns/merging-g                                  
+                    alore/results/ViT-B-32/                                     
+           INFO     Average accuracy: 0.7131   evaluate_multitask_merging.py:125
+           INFO     Average normalized         evaluate_multitask_merging.py:126
+                    accuracy: 0.8021                                            
