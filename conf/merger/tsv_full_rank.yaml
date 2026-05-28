@@ -1,0 +1,5 @@
+_target_: model_merging.merger.tsv_full_rank_merger.FullRankTaskSingularVectorsMerger
+
+svd_path: "${oc.env:MODELS_PATH}/svd_dict_${nn.encoder.model_name}.pt"
+non_matrix_params_aggregation: "mean"
+device: ${device}
